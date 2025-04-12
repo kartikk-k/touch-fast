@@ -2,6 +2,13 @@
 
 A simple CLI tool that helps you navigate through directories and create files or folders with ease.
 
+Run the CLI tool:
+
+```bash
+# Run the command
+touch-fast
+```
+
 ## Features
 
 - Interactive directory selection using arrow keys
