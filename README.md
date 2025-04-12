@@ -1,8 +1,24 @@
 # touch-fast
 
-A simple CLI tool that helps you navigate through directories and create files or folders with ease.
+A simple CLI tool that helps you easily create files or folders by helping you navigate through directories.
 
-Run the CLI tool:
+## Installation
+
+```bash
+# Install globally from npm
+npm install -g touch-fast
+
+# Or using yarn
+yarn global add touch-fast
+
+# Or using pnpm
+pnpm add -g touch-fast
+
+# Or using bun
+bun add -g touch-fast
+```
+
+## Run the CLI tool:
 
 ```bash
 # Run the command
@@ -20,19 +36,6 @@ touch-fast
 - Colorful UI with helpful messages
 - Checks for file/folder existence to prevent accidental overwrites
 - Simple, focused workflow with no unnecessary prompts
-
-## Installation
-
-```bash
-# Install globally from npm
-npm install -g touch-fast
-
-# Or using yarn
-yarn global add touch-fast
-
-# Or using pnpm
-pnpm add -g touch-fast
-```
 
 ## Usage
 
