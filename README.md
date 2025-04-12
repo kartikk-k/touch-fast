@@ -9,7 +9,7 @@ A simple CLI tool that helps you navigate through directories and create files o
 - Starts with a clear root directory indicator
 - Visual hierarchy with indentation levels for easier navigation
 - Create files or folders in any directory with a single selection
-- Choose whether to create a file or folder after selecting a directory
+- Intuitive workflow: choose what to create, then where to create it
 - Colorful UI with helpful messages
 - Checks for file/folder existence to prevent accidental overwrites
 - Simple, focused workflow with no unnecessary prompts
@@ -46,10 +46,10 @@ bun run start
 ```
 
 Create files or folders in directories:
-1. The tool displays a (root) option at the top representing your current directory
-2. All subdirectories are listed with proper indentation to show hierarchy
-3. Use arrow keys to select a directory
-4. Choose whether to create a file or folder
+1. Choose whether you want to create a file or folder
+2. The tool displays a (root) option at the top representing your current directory
+3. All subdirectories are listed with proper indentation to show hierarchy
+4. Use arrow keys to select where you want to create the item
 5. Enter a name for your file or folder
 6. The tool will create the item in your selected directory and exit
 7. Run the command again if you need to create additional items

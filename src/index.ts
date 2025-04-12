@@ -25,6 +25,17 @@ interface DirectoryOption {
 
 async function main() {
   try {
+    // Ask user if they want to create a file or folder first
+    const { createType } = await inquirer.prompt({
+      type: 'list',
+      name: 'createType',
+      message: 'What would you like to create?',
+      choices: [
+        { name: 'File', value: 'file' },
+        { name: 'Folder', value: 'folder' }
+      ]
+    });
+    
     // Get current directory
     const currentDir = process.cwd();
     
@@ -51,24 +62,13 @@ async function main() {
     const { selectedDir } = await inquirer.prompt({
       type: 'list',
       name: 'selectedDir',
-      message: 'Select a directory:',
+      message: `Select a directory to create the ${createType} in:`,
       choices: allChoices.map(dir => ({
         name: ' '.repeat(dir.indent * 2) + dir.name,
         value: dir.value
       })),
       loop: false,
       pageSize: 20
-    });
-    
-    // Ask user if they want to create a file or folder
-    const { createType } = await inquirer.prompt({
-      type: 'list',
-      name: 'createType',
-      message: 'What would you like to create?',
-      choices: [
-        { name: 'File', value: 'file' },
-        { name: 'Folder', value: 'folder' }
-      ]
     });
     
     if (createType === 'file') {
