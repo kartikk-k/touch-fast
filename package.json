@@ -1,0 +1,28 @@
+{
+    "name": "create-folder-cli",
+    "module": "index.ts",
+    "type": "module",
+    "bin": {
+        "create-item": "./dist/index.js"
+    },
+    "scripts": {
+        "start": "bun run ./index.ts",
+        "build": "bun build index.ts --outdir ./dist --target node",
+        "dev": "bun run ./index.ts"
+    },
+    "devDependencies": {
+        "@types/bun": "latest",
+        "@types/fs-extra": "^11.0.4",
+        "@types/inquirer": "^9.0.7"
+    },
+    "peerDependencies": {
+        "typescript": "^5.0.0"
+    },
+    "dependencies": {
+        "chalk": "^5.3.0",
+        "commander": "^11.1.0",
+        "inquirer": "^9.2.12",
+        "ora": "^7.0.1",
+        "fs-extra": "^11.2.0"
+    }
+}
