@@ -10,7 +10,7 @@ import path from 'path';
 // Define the CLI program
 const program = new Command();
 program
-  .name('create-folder-cli')
+  .name('touch-fast')
   .description('Navigate directories and create files or folders')
   .version('1.0.0');
 

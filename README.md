@@ -1,4 +1,4 @@
-# create-folder-cli
+# touch-fast
 
 A simple CLI tool that helps you navigate through directories and create files or folders with ease.
 
@@ -16,21 +16,15 @@ A simple CLI tool that helps you navigate through directories and create files o
 
 ## Installation
 
-Clone this repository and install dependencies:
-
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/create-folder-cli.git
-cd create-folder-cli
+# Install globally from npm
+npm install -g touch-fast
 
-# Install dependencies
-bun install
+# Or using yarn
+yarn global add touch-fast
 
-# Build the project
-bun run build
-
-# Link it globally (optional)
-npm link
+# Or using pnpm
+pnpm add -g touch-fast
 ```
 
 ## Usage
@@ -38,11 +32,8 @@ npm link
 Run the CLI tool:
 
 ```bash
-# If linked globally
-create-item
-
-# Or run directly
-bun run start
+# Run the command
+touch-fast
 ```
 
 Create files or folders in directories:
@@ -57,6 +48,13 @@ Create files or folders in directories:
 ## Development
 
 ```bash
+# Clone the repository
+git clone https://github.com/yourusername/touch-fast.git
+cd touch-fast
+
+# Install dependencies
+bun install
+
 # Build the project
 bun run build
 
